@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/4a45d7d5ed.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-sora {
+        font-family: "Sora", sans-serif;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              Accent: "#179800",
+              secondary: "#EFEBE3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header
+      class="container mx-auto px-4 lg:px-12 bg-gradient-to-b from-white to-yellow-50"
+    >
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl"
+            >
+              <li><a>Product</a></li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a href=""><img src="./assets/logo-header.png" alt="" /></a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a>Product</a></li>
+            <li>
+              <a href=""> Services</a>
+            </li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end space-x-4 text-xl hidden lg:flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-flatbed-suitcase fa-flip-horizontal"></i>
+          <button class="px-6 py-2 border border-green-400 rounded-md">
+            Login
+          </button>
+          <button class="px-6 py-2 bg-green-700 text-white rounded-md">
+            Register
+          </button>
+        </div>
+      </div>
+      <!-- banner container -->
+      <div class="flex flex-col items-center">
+        <!-- title text -->
+        <h1 class="mt-28 text-6xl font-semibold text-center">
+          Freshness <span class="text-green-700">You Can</span><br />
+          <span class="text-green-700">Count</span> On, Prices You’ll Love!
+        </h1>
+        <p class="mt-8 text-center text-2xl text-gray-500">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          <br />pantry staples, we’ve got you covered every day!
+        </p>
+        <img class="w-auto" src="./assets/hero-vegetables.png" alt="" />
+      </div>
+    </header>
+  </body>
+</html>
